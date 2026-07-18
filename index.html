@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الموقع الإلكتروني الرسمي الخاص بـ سيف الدين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="netbg"></canvas>
+<div class="vignette"></div>
+<div id="cursorGlow"></div>
+
+<!-- ================= SPLASH ================= -->
+<div id="splash">
+  <div class="logo3d-scene">
+    <div class="logo3d">
+      <div class="face">SA</div>
+      <div class="face back">SA</div>
+    </div>
+  </div>
+  <div class="splash-tag">OFFICIAL PRIVATE WEBSITE</div>
+  <div class="splash-name">Seif Aldain</div>
+  <div class="splash-bar"><i></i></div>
+</div>
+
+<!-- ================= LOGIN ================= -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-portrait" id="loginPortrait">
+      <!-- ضع صورتك هنا: استبدل هذا العنصر بـ <img src="صورتك.jpg"> -->
+      <img src="assets/images/profile.jpg">
+    </div>
+    <div class="login-eyebrow">دخول خاص ومحمي</div>
+    <div class="login-title">الموقع الإلكتروني الرسمي<br>الخاص بـ سيف الدين</div>
+
+    <div class="pw-field">
+      <input type="password" id="pwInput" placeholder="كلمة المرور" maxlength="20" autocomplete="off">
+      <span class="pw-toggle" id="pwToggle">عرض</span>
+    </div>
+    <div class="login-error" id="loginError">كلمة المرور غير صحيحة، حاول مرة أخرى</div>
+    <button class="login-btn" id="loginBtn">دخول</button>
+    <div class="login-note">محتوى هذا الموقع خاص ومخصص للاستخدام الشخصي فقط.</div>
+  </div>
+</div>
+
+<div id="flash"></div>
+
+<!-- ================= APP ================= -->
+<div id="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="side-brand">
+      <b>سيف الدين</b>
+      <span>SEIF ALDAIN · OFFICIAL</span>
+    </div>
+    <ul class="nav-list">
+      <li><a data-page="home" class="active"><span class="ic">🏠</span> الرئيسية</a></li>
+      <li><a data-page="profile"><span class="ic">👤</span> ملفي الشخصي</a></li>
+      <li><a data-page="files"><span class="ic">📂</span> ملفاتي</a></li>
+      <li><a data-page="docs"><span class="ic">📄</span> مستنداتي</a></li>
+      <li><a data-page="gallery"><span class="ic">🖼</span> معرض الصور</a></li>
+      <li><a data-page="videos"><span class="ic">🎥</span> الفيديوهات</a></li>
+      <li><a data-page="notes"><span class="ic">📝</span> ملاحظاتي</a></li>
+      <li><a data-page="favorites"><span class="ic">⭐</span> المفضلة</a></li>
+      <li><a data-page="about"><span class="ic">⚙️</span> معلومات الموقع</a></li>
+      <li class="logout-item"><a id="logoutBtn"><span class="ic">🚪</span> تسجيل الخروج</a></li>
+    </ul>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="clockbox">
+        <div class="time" id="clockTime">--:--:--</div>
+        <div class="date" id="clockDate">-- -- ----</div>
+      </div>
+    </div>
+
+    <!-- HOME -->
+    <div class="page active" id="page-home"></div>
+
+    <!-- PROFILE -->
+    <div class="page" id="page-profile"></div>
+
+    <!-- FILES -->
+    <div class="page" id="page-files"></div>
+
+    <!-- DOCS -->
+    <div class="page" id="page-docs"></div>
+
+    <!-- GALLERY -->
+    <div class="page" id="page-gallery"></div>
+
+    <!-- VIDEOS -->
+    <div class="page" id="page-videos"></div>
+
+    <!-- NOTES -->
+    <div class="page" id="page-notes"></div>
+
+    <!-- FAVORITES -->
+    <div class="page" id="page-favorites"></div>
+
+    <!-- ABOUT -->
+    <div class="page" id="page-about"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
